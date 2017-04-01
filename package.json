@@ -14,7 +14,7 @@
     "prepublish": "npm run test && npm run build && npm run docs",
     "pretest": "npm run lint",
     "test": "node test.js",
-    "lint": "standard",
+    "lint": "standard providers",
     "build": "npm run rollup && npm run uglify",
     "docs": "documentation readme index.js --shallow --section=API --markdown-toc",
     "rollup": "rollup -c rollup.config.js",
