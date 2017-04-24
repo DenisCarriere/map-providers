@@ -19,8 +19,8 @@ $ yarn add map-providers
 ## Quickstart
 
 ```javascript
-var mapProviders = require('map-providers');
-var osm = mapProviders.openstreetmap.url;
+var providers = require('map-providers');
+var osm = providers.openstreetmap.url;
 //= 'https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png'
 ```
 
