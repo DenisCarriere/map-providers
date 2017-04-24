@@ -1,6 +1,6 @@
 {
   "name": "map-providers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "List of available Map Providers",
   "main": "index.js",
   "types": "index.d.ts",
@@ -11,16 +11,10 @@
     "providers"
   ],
   "scripts": {
-    "prepublish": "npm run test && npm run build && npm run docs",
-    "pretest": "npm run lint",
-    "test": "node test.js",
-    "lint": "standard providers",
-    "build": "npm run rollup && npm run uglify",
-    "docs": "documentation readme index.js --shallow --section=API --markdown-toc",
-    "rollup": "rollup -c rollup.config.js",
-    "uglify": "uglifyjs docs/map-providers.js -c -m > docs/map-providers.min.js"
+    "pretest": "standard",
+    "test": "node test.js"
   },
-  "author": "Denis Carriere <carriere.denis@gmail.com>",
+  "author": "Denis Carriere <@DenisCarriere>",
   "license": "MIT",
   "keywords": [
     "gis",
@@ -29,16 +23,8 @@
     "providers"
   ],
   "devDependencies": {
-    "documentation": "^4.0.0-beta.18",
-    "rollup": "^0.41.4",
-    "rollup-plugin-commonjs": "^7.1.0",
-    "rollup-plugin-json": "^2.1.0",
-    "rollup-plugin-node-builtins": "^2.1.0",
-    "rollup-plugin-node-globals": "^1.1.0",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "standard": "^8.6.0",
     "tape": "^4.6.3",
-    "uglifyjs": "^2.4.10"
+    "standard": "^10.0.2"
   },
   "dependencies": {}
 }

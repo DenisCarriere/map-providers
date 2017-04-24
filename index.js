@@ -1,6 +1,11 @@
+const esri = require('./providers/esri')
+const bing = require('./providers/bing')
+const openstreetmap = require('./providers/openstreetmap')
+const toporama = require('./providers/toporama')
+
 module.exports = {
-  esri: require('./providers/esri'),
-  bing: require('./providers/bing'),
-  openstreetmap: require('./providers/openstreetmap'),
-  toporama: require('./providers/toporama')
+  esri: esri,
+  bing: bing,
+  openstreetmap: openstreetmap,
+  toporama: toporama
 }

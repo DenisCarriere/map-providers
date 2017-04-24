@@ -13,13 +13,7 @@
 **npm**
 
 ```bash
-$ npm install --save map-providers
-```
-
-**web browser ([ES5](https://kangax.github.io/compat-table/es5))**
-
-```html
-<script src="https://unpkg.com/map-providers/docs/map-providers.min.js"></script>
+$ yarn add map-providers
 ```
 
 ## Quickstart
@@ -32,7 +26,7 @@ var osm = mapProviders.openstreetmap.url;
 
 ## Providers
 
-| Name                          | Unique Key              |
+| Name                          | Identifier              |
 | ----------------------------- | ----------------------- |
 | OpenStreetMap Standard        | openstreetmap.standard  |
 | OpenStreetMap Cycle Map       | openstreetmap.cycle     |
@@ -47,5 +41,3 @@ var osm = mapProviders.openstreetmap.url;
 | ESRI USA Topo Maps            | esri.usatopo            |
 | ESRI World Street Map         | esri.street             |
 | ESRI World Topographic Map    | esri.topo               |
-
-## API
