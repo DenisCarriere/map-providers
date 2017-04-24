@@ -23,8 +23,8 @@
     "providers"
   ],
   "devDependencies": {
-    "tape": "^4.6.3",
-    "standard": "^10.0.2"
+    "standard": "^10.0.2",
+    "tape": "^4.6.3"
   },
   "dependencies": {}
 }
