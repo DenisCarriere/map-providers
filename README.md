@@ -26,18 +26,18 @@ var osm = mapProviders.openstreetmap.url;
 
 ## Providers
 
-| Name                          | Identifier              |
-| ----------------------------- | ----------------------- |
-| OpenStreetMap Standard        | openstreetmap.standard  |
-| OpenStreetMap Cycle Map       | openstreetmap.cycle     |
-| OpenStreetMap Humanitarian    | openstreetmap.hot       |
-| OpenStreetMap Transport       | openstreetmap.transport |
-| OpenStreetMap Wikimedia       | openstreetmap.wikimedia |
-| OpenStreetMap Lyrk            | openstreetmap.lyrk      |
-| Bing Imagery                  | bing.imagery            |
-| National Geographic World Map | esri.natgeo             |
-| ESRI Imagery                  | esri.imagery            |
-| ESRI Ocean Basemap            | esri.ocean              |
-| ESRI USA Topo Maps            | esri.usatopo            |
-| ESRI World Street Map         | esri.street             |
-| ESRI World Topographic Map    | esri.topo               |
+| Name                          | Identifier                |
+| ----------------------------- | ------------------------- |
+| OpenStreetMap Standard        | `openstreetmap.standard`  |
+| OpenStreetMap Cycle Map       | `openstreetmap.cycle`     |
+| OpenStreetMap Humanitarian    | `openstreetmap.hot`       |
+| OpenStreetMap Transport       | `openstreetmap.transport` |
+| OpenStreetMap Wikimedia       | `openstreetmap.wikimedia` |
+| OpenStreetMap Lyrk            | `openstreetmap.lyrk`      |
+| Bing Imagery                  | `bing.imagery`            |
+| National Geographic World Map | `esri.natgeo`             |
+| ESRI Imagery                  | `esri.imagery`            |
+| ESRI Ocean Basemap            | `esri.ocean`              |
+| ESRI USA Topo Maps            | `esri.usatopo`            |
+| ESRI World Street Map         | `esri.street`             |
+| ESRI World Topographic Map    | `esri.topo`               |
