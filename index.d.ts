@@ -1,4 +1,4 @@
-export interface Provider {
+interface Provider {
     attribution: string;
     categories: string[];
     description: string;
@@ -9,41 +9,33 @@ export interface Provider {
     minZoom: number;
     maxZoom: number;
 }
-
-/**
- * Bing
- */
-export declare const bing: {
-    imagery: Provider;
+interface Providers {
+    bing: {
+        imagery: Provider;
+    }
+    esri: {
+        natgeo: Provider;
+        ocean: Provider;
+        usatopo: Provider;
+        imagery: Provider;
+        street: Provider;
+        topo: Provider;
+    }
+    toporama: {
+        english: Provider;
+    }
+    openstreetmap: {
+        standard: Provider;
+        cycle: Provider;
+        hot: Provider;
+        transport: Provider;
+        wikimedia: Provider;
+        lyrk: Provider;
+    }
+    [provider: string]: {
+        [service: string]: Provider
+  }
 }
-
-/**
- * ESRI Basemaps
- */
-export declare const esri: {
-    natgeo: Provider;
-    ocean: Provider;
-    usatopo: Provider;
-    imagery: Provider;
-    street: Provider;
-    topo: Provider;
-}
-
-/**
- * Toporama
- */
-export declare const toporama: {
-    english: Provider;
-}
-
-/**
- * OpenStreetMap
- */
-export declare const openstreetmap: {
-    standard: Provider;
-    cycle: Provider;
-    hot: Provider;
-    transport: Provider;
-    wikimedia: Provider;
-    lyrk: Provider;
-}
+declare const providers: Providers
+declare namespace providers {}
+export = providers
