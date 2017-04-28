@@ -12,6 +12,7 @@ interface Provider {
 interface Providers {
     bing: {
         imagery: Provider;
+        roads: Provider;
     }
     esri: {
         natgeo: Provider;

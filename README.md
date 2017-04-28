@@ -35,6 +35,7 @@ var osm = providers.openstreetmap.url;
 | OpenStreetMap Wikimedia       | `openstreetmap.wikimedia` |
 | OpenStreetMap Lyrk            | `openstreetmap.lyrk`      |
 | Bing Imagery                  | `bing.imagery`            |
+| Bing Roads                    | `bing.roads`            |
 | National Geographic World Map | `esri.natgeo`             |
 | ESRI Imagery                  | `esri.imagery`            |
 | ESRI Ocean Basemap            | `esri.ocean`              |

@@ -8,8 +8,24 @@ module.exports.imagery = {
   minZoom: 1,
   maxZoom: 20,
   url: 'https://ecn.t{switch:0,1,2,3}.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=5250',
-  description: 'Tiles from Bing',
-  attribution: 'Map data © Bing',
+  description: 'Bing Imagery',
+  attribution: 'Earthstar Geographics SIO, © 2017 Microsoft Corporation, Bing, © 2017 DigitalGlobe, USGS, © 2017 GeoEye',
+  format: 'jpeg',
+  type: 'baselayer'
+}
+
+module.exports.roads = {
+  name: 'Bing Roads',
+  categories: [
+    'bing',
+    'roads',
+    'world'
+  ],
+  minZoom: 1,
+  maxZoom: 20,
+  url: 'http://ecn.t{switch:0,1,2,3}.tiles.virtualearth.net/tiles/r{quadkey}.jpeg?g=5693&mkt=&shading=hill',
+  description: 'Bing Roads',
+  attribution: '© 2017 Microsoft Corporation, Bing, © 2017 HERE, © AND',
   format: 'jpeg',
   type: 'baselayer'
 }
