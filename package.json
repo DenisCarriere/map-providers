@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "pretest": "standard",
-    "test": "node test.js"
+    "test": "tap test.js --cov"
   },
   "author": "Denis Carriere <@DenisCarriere>",
   "license": "MIT",
@@ -24,7 +24,7 @@
   ],
   "devDependencies": {
     "standard": "^10.0.2",
-    "tape": "^4.6.3"
+    "tap": "^10.3.2"
   },
   "dependencies": {}
 }
