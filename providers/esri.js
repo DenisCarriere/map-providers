@@ -1,5 +1,6 @@
 module.exports.natgeo = {
   name: 'ESRI National Geographic World Map',
+  shortName: 'NatGeo',
   categories: [
     'esri',
     'national',
@@ -17,6 +18,7 @@ module.exports.natgeo = {
 
 module.exports.ocean = {
   name: 'ESRI Ocean Basemap',
+  shortName: 'Ocean',
   categories: [
     'esri',
     'ocean',
@@ -33,6 +35,7 @@ module.exports.ocean = {
 
 module.exports.usatopo = {
   name: 'ESRI USA Topo Maps',
+  shortName: 'USA Topo',
   categories: [
     'esri',
     'topo',
@@ -49,6 +52,7 @@ module.exports.usatopo = {
 
 module.exports.imagery = {
   name: 'ESRI World Imagery',
+  shortName: 'Imagery',
   categories: [
     'esri',
     'imagery',
@@ -65,6 +69,7 @@ module.exports.imagery = {
 
 module.exports.street = {
   name: 'ESRI World Street Map',
+  shortName: 'Street',
   categories: [
     'esri',
     'street',
@@ -81,6 +86,7 @@ module.exports.street = {
 
 module.exports.topo = {
   name: 'ESRI World Topographic Map',
+  shortName: 'Topo',
   categories: [
     'esri',
     'topo',

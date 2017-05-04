@@ -13,6 +13,7 @@ test('map-providers', t => {
       t.assert(mapProviders[provider][service].name !== undefined, `<name> is required [${provider}.${service}]`)
       t.assert(mapProviders[provider][service].type !== undefined, `<type> is required [${provider}.${service}]`)
       t.assert(mapProviders[provider][service].url !== undefined, `<url> is required [${provider}.${service}]`)
+      t.assert(mapProviders[provider][service].shortName !== undefined, `<shortName> is required [${provider}.${service}]`)
       t.assert(mapProviders[provider][service].format.toLowerCase() !== 'jpg', `<format> cannot be JPG [${provider}.${service}]`)
     }
   }

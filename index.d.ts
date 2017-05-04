@@ -3,6 +3,7 @@ interface Provider {
     categories: string[];
     description: string;
     name: string;
+    shortName: string;
     format: 'png' | 'pbf' | 'webp' | 'jpg';
     url: string;
     type: 'baselayer' | 'overlay';
@@ -32,6 +33,7 @@ interface Providers {
         transport: Provider;
         wikimedia: Provider;
         lyrk: Provider;
+        hillshade: Provider;
     }
     [provider: string]: {
         [service: string]: Provider

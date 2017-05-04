@@ -1,5 +1,6 @@
 module.exports.imagery = {
   name: 'Google Imagery',
+  shortName: 'Imagery',
   categories: [
     'google',
     'imagery',

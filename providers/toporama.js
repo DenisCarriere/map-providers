@@ -1,5 +1,6 @@
 module.exports.english = {
   name: 'Toporama',
+  shortName: 'Toporama',
   categories: [
     'toporama',
     'canada',

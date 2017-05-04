@@ -1,5 +1,6 @@
 module.exports.imagery = {
   name: 'Bing Imagery',
+  shortName: 'Imagery',
   categories: [
     'bing',
     'imagery',
@@ -16,6 +17,7 @@ module.exports.imagery = {
 
 module.exports.roads = {
   name: 'Bing Roads',
+  shortName: 'Roads',
   categories: [
     'bing',
     'roads',

@@ -1,5 +1,6 @@
 module.exports.standard = {
   name: 'OpenStreetMap Standard',
+  shortName: 'Standard',
   categories: [
     'openstreetmap',
     'standard',
@@ -16,6 +17,7 @@ module.exports.standard = {
 
 module.exports.cycle = {
   name: 'OpenStreetMap Cycle Map',
+  shortName: 'Cycle',
   categories: [
     'openstreetmap',
     'cycle',
@@ -32,6 +34,7 @@ module.exports.cycle = {
 
 module.exports.hot = {
   name: 'OpenStreetMap Humanitarian',
+  shortName: 'Humanitarian',
   categories: [
     'openstreetmap',
     'hot',
@@ -49,6 +52,7 @@ module.exports.hot = {
 
 module.exports.transport = {
   name: 'OpenStreetMap Transport Map',
+  shortName: 'Transport',
   categories: [
     'openstreetmap',
     'transport',
@@ -65,6 +69,7 @@ module.exports.transport = {
 
 module.exports.wikimedia = {
   name: 'OpenStreetMap Wikimedia',
+  shortName: 'Wikimedia',
   categories: [
     'openstreetmap',
     'wikimedia',
@@ -81,6 +86,7 @@ module.exports.wikimedia = {
 
 module.exports.lyrk = {
   name: 'OpenStreetMap Lyrk',
+  shortName: 'Lyrk',
   categories: [
     'openstreetmap',
     'lyrk',
@@ -89,6 +95,23 @@ module.exports.lyrk = {
   minZoom: 0,
   maxZoom: 19,
   url: 'https://tiles.lyrk.org/ls/{z}/{x}/{y}?apikey=6e8cfef737a140e2a58c8122aaa26077',
+  description: 'Tiles from OpenStreetMap',
+  attribution: 'Map data © OpenStreetMap',
+  format: 'png',
+  type: 'baselayer'
+}
+
+module.exports.hillshade = {
+  name: 'OpenStreetMap Hillshade',
+  shortName: 'Hillshade',
+  categories: [
+    'openstreetmap',
+    'hillshade',
+    'world'
+  ],
+  minZoom: 0,
+  maxZoom: 19,
+  url: 'https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}',
   description: 'Tiles from OpenStreetMap',
   attribution: 'Map data © OpenStreetMap',
   format: 'png',
