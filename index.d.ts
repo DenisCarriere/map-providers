@@ -11,6 +11,10 @@ interface Provider {
     maxZoom: number;
 }
 interface Providers {
+    digitalglobe: {
+        premium: Provider;
+        standard: Provider;
+    }
     bing: {
         imagery: Provider;
         roads: Provider;

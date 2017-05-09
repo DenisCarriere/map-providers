@@ -1,4 +1,4 @@
-const {test} = require('tap')
+const test = require('tape')
 const mapProviders = require('./')
 
 test('map-providers', t => {
