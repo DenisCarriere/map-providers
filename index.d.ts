@@ -39,6 +39,9 @@ interface Providers {
         lyrk: Provider;
         hillshade: Provider;
     }
+    nrcan: {
+        basemap: Provider;
+    }
     [provider: string]: {
         [service: string]: Provider
   }

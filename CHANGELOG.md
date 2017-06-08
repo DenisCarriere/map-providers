@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 1.3.0 - 2017-06-08
+
+- Add NRCAN's CBMT Basemap
+
 ## 1.2.0 - 2017-05-09
 
 - Add DigitalGlobe Imagery provider
