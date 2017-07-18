@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 1.4.0 - 2017-07-18
+
+- Change JPEG => JPG to all providers
+
 ## 1.3.0 - 2017-06-08
 
 - Add NRCAN's CBMT Basemap

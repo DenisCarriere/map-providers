@@ -11,6 +11,6 @@ module.exports.imagery = {
   url: 'http://khm{switch:0,1,2,3}.googleapis.com/kh?v=722&hl=en-CA&&x={x}&y={y}&z={z}',
   description: 'Google Imagery',
   attribution: 'Imagery ©2017 Google',
-  format: 'jpeg',
+  format: 'jpg',
   type: 'baselayer'
 }
