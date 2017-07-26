@@ -32,11 +32,8 @@ interface Providers {
     }
     openstreetmap: {
         standard: Provider;
-        cycle: Provider;
         hot: Provider;
-        transport: Provider;
         wikimedia: Provider;
-        lyrk: Provider;
         hillshade: Provider;
     }
     nrcan: {

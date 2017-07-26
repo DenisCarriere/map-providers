@@ -1,6 +1,13 @@
 
 # Changelog
 
+## 1.5.0 - 2017-07-26
+
+- Drop providers due to API key requirements
+  - Lyrk
+  - Cycle
+  - Transporation
+
 ## 1.4.0 - 2017-07-18
 
 - Change JPEG => JPG to all providers

@@ -1,7 +1,11 @@
 {
   "name": "map-providers",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "List of available Map Providers",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DenisCarriere/map-providers.git"
+  },
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
