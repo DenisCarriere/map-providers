@@ -9,6 +9,7 @@ interface Provider {
     type: 'baselayer' | 'overlay';
     minZoom: number;
     maxZoom: number;
+    required: string[];
 }
 interface Providers {
     digitalglobe: {

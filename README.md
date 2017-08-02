@@ -19,27 +19,44 @@ $ yarn add map-providers
 ## Quickstart
 
 ```javascript
-var providers = require('map-providers');
-var osm = providers.openstreetmap.url;
-//= 'https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png'
+const providers = require('map-providers');
+Object.keys(providers)
+//= [ 'openstreetmap', 'bing', 'digitalglobe', 'esri', 'nrcan' ]
+Object.keys(providers.openstreetmap)
+//= [ 'standard', 'hot', 'wikimedia', 'hillshade' ]
+providers.openstreetmap.standard;
+//= { name: 'OpenStreetMap Standard',
+//   shortName: 'Standard',
+//   categories: [ 'openstreetmap', 'standard', 'world' ],
+//   minZoom: 0,
+//   maxZoom: 19,
+//   required: [],
+//   url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+//   description: 'Tiles from OpenStreetMap',
+//   attribution: 'Map data © OpenStreetMap',
+//   format: 'png',
+//   type: 'baselayer' }
+providers.openstreetmap.standard.url;
+//= 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 ```
 
 ## Providers
 
-| Name                          | Identifier                |
-| ----------------------------- | ------------------------- |
-| OpenStreetMap Standard        | `openstreetmap.standard`  |
-| OpenStreetMap Cycle Map       | `openstreetmap.cycle`     |
-| OpenStreetMap Humanitarian    | `openstreetmap.hot`       |
-| OpenStreetMap Transport       | `openstreetmap.transport` |
-| OpenStreetMap Wikimedia       | `openstreetmap.wikimedia` |
-| OpenStreetMap Lyrk            | `openstreetmap.lyrk`      |
-| OpenStreetMap Hillshade       | `openstreetmap.hillshade` |
-| Bing Imagery                  | `bing.imagery`            |
-| Bing Roads                    | `bing.roads`              |
-| National Geographic World Map | `esri.natgeo`             |
-| ESRI Imagery                  | `esri.imagery`            |
-| ESRI Ocean Basemap            | `esri.ocean`              |
-| ESRI USA Topo Maps            | `esri.usatopo`            |
-| ESRI World Street Map         | `esri.street`             |
-| ESRI World Topographic Map    | `esri.topo`               |
+| Name                          | Identifier                | Required        |
+| ----------------------------- | ------------------------- |---------------- |
+| OpenStreetMap Standard        | `openstreetmap.standard`  |                 |
+| OpenStreetMap Humanitarian    | `openstreetmap.hot`       |                 |
+| OpenStreetMap Wikimedia       | `openstreetmap.wikimedia` |                 |
+| OpenStreetMap Hillshade       | `openstreetmap.hillshade` |                 |
+| Bing Imagery                  | `bing.imagery`            |                 |
+| Bing Roads                    | `bing.roads`              |                 |
+| DigitalGlobe Premium Imagery  | `digitalglobe.premium`    | access_token    |
+| DigitalGlobe Standard Imagery | `digitalglobe.standard`   | access_token    |
+| National Geographic World Map | `esri.natgeo`             |                 |
+| ESRI Imagery                  | `esri.imagery`            |                 |
+| ESRI Ocean Basemap            | `esri.ocean`              |                 |
+| ESRI USA Topo Maps            | `esri.usatopo`            |                 |
+| ESRI World Street Map         | `esri.street`             |                 |
+| ESRI World Topographic Map    | `esri.topo`               |                 |
+| NRCAN Transportation (CBMT)   | `nrcan.cbmt`              |                 |
+| NRCAN Toporama                | `nrcan.toporama`          |                 |
